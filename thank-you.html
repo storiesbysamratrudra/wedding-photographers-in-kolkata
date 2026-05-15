@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thank You | Stories by Samrat Rudra</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Jost', sans-serif;
+    background: #f6f3ef;
+    color: #2c2925;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 2rem;
+  }
+  .thank-you-box {
+    background: #ffffff;
+    padding: 5rem 3rem;
+    border: 1px solid #dfd3c3;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+    max-width: 600px;
+    width: 100%;
+  }
+  .logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.2rem;
+    font-weight: 300;
+    line-height: 0.8;
+    margin-bottom: 2rem;
+    color: #2c2925;
+  }
+  .logo-bottom {
+    font-size: 0.9rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    margin-top: 0.4rem;
+    display: block;
+  }
+  .logo-red { color: red; }
+  h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+  }
+  p {
+    font-weight: 300;
+    font-size: 1.05rem;
+    color: #8c837a;
+    line-height: 1.8;
+    margin-bottom: 2.5rem;
+  }
+  .back-btn {
+    display: inline-block;
+    background: #2c2925;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.8rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 1.2rem 2.5rem;
+    transition: background 0.3s;
+  }
+  .back-btn:hover { background: #000000; }
+  
+  /* Copy Protection */
+  body { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+</style>
+</head>
+<body>
+
+<div class="thank-you-box">
+  <div class="logo">
+    Stor<span style="position:relative">i<span style="position:absolute; top:3px; left:50%; transform:translateX(-50%); width:5px; height:5px; background:red; border-radius:50%;"></span></span>es<span style="font-family:'Jost', sans-serif; font-size:0.7rem; margin-left:0.4rem;">by</span>
+    <span class="logo-bottom"><span class="logo-red">S</span>amrat Rudra</span>
+  </div>
+  
+  <h1>Inquiry Received.</h1>
+  <p>Thank you for reaching out. We are currently checking our studio calendar for your wedding date. We will send you our custom pricing guide and availability via WhatsApp within the next 2 hours.</p>
+  
+  <a href="index.html" class="back-btn">Return to Homepage</a>
+</div>
+
+<script>
+  // Copy Protection Locks
+  document.addEventListener('contextmenu', e => e.preventDefault());
+  document.onkeydown = function(e) {
+    if(e.keyCode == 123 || (e.ctrlKey && e.shiftKey && (e.keyCode == 73 || e.keyCode == 67 || e.keyCode == 74)) || (e.ctrlKey && e.keyCode == 85) || (e.metaKey && e.altKey && (e.keyCode == 73 || e.keyCode == 85))) return false;
+  };
+</script>
+
+</body>
+</html>
