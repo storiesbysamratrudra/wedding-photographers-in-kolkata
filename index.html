@@ -19,6 +19,7 @@
     --charcoal: #2c2925; 
     --champagne: #dfd3c3; 
     --text-muted: #8c837a;
+    --accent-red: #c93b3b;
     --transition-slow: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
@@ -87,9 +88,16 @@
   .hero-text-content { animation: heroFadeUp 1s ease both; }
   @keyframes heroFadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
 
+  /* Updated Offer Banner */
   .soft-offer {
     display: inline-block; font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600;
-    color: var(--charcoal); background: var(--champagne); padding: 0.4rem 1rem; margin-bottom: 1.5rem; border-radius: 2px;
+    color: #fff; background: var(--accent-red); padding: 0.5rem 1.2rem; margin-bottom: 1.5rem; border-radius: 2px;
+    animation: pulseOffer 2s infinite;
+  }
+  @keyframes pulseOffer {
+    0% { box-shadow: 0 0 0 0 rgba(201, 59, 59, 0.4); }
+    70% { box-shadow: 0 0 0 10px rgba(201, 59, 59, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(201, 59, 59, 0); }
   }
   
   .hero-text-content h1 { font-size: clamp(2.2rem, 4vw, 3.8rem); line-height: 1.1; margin-bottom: 1rem; font-weight: 400; }
@@ -144,7 +152,7 @@
   }
   .mini-form-btn:hover { background: #000; }
 
-  .form-scarcity { font-size: 0.7rem; color: var(--charcoal); font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; text-align: center; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+  .form-scarcity { font-size: 0.7rem; color: var(--accent-red); font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; text-align: center; margin-top: 1.5rem; margin-bottom: 0.5rem; }
   .form-micro-text { font-size: 0.75rem; color: var(--text-muted); text-align: center; line-height: 1.6; }
   .form-micro-text span { display: block; margin-bottom: 0.2rem; }
 
@@ -321,7 +329,7 @@
   
   <div class="hero-wrapper">
     <div class="hero-text-content">
-      <div class="soft-offer">🗓️ 2026 Wedding Bookings Now Open</div>
+      <div class="soft-offer">🎉 Book This Week & Get A Free Pre-Wedding Shoot</div>
       <h1>Cinematic Bengali Wedding Photography & Films in Kolkata</h1>
       
       <div class="hero-location-tags">
@@ -644,7 +652,7 @@
         </div>
         <button type="submit" class="mini-form-btn">Get Custom Wedding Quote</button>
         
-        <div class="form-scarcity">Only 8 weddings accepted per month.</div>
+        <div class="form-scarcity" style="color: var(--accent-red);">🎉 Book This Week & Get A Free Pre-Wedding Shoot</div>
         <div class="form-micro-text">
           <span>✓ We reply within 2 hours.</span>
           <span>✓ Your date is checked personally.</span>
