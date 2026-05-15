@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Premium Wedding Photographers in Kolkata | Stories by Samrat Rudra</title>
+
+<link rel="preload" as="video" href="hero-video.mp4" type="video/mp4">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --gallery-white: #ffffff;
+    --fine-art-taupe: #f6f3ef;
+    --charcoal: #2c2925; 
+    --champagne: #dfd3c3; 
+    --text-muted: #8c837a;
+    --transition-slow: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  html { scroll-behavior: smooth; font-size: 16px; }
+
+  body {
+    font-family: 'Jost', sans-serif;
+    background: var(--gallery-white);
+    color: var(--charcoal);
+    overflow-x: hidden;
+    line-height: 1.8;
+  }
+
+  .serif { font-family: 'Cormorant Garamond', serif; }
+  .center { text-align: center; }
+
+  h1, h2, h3, h4 { font-weight: 300; color: var(--charcoal); }
+  p { font-weight: 300; font-size: 1rem; color: var(--text-muted); margin-bottom: 1.5rem; }
+
+  section { padding: 6rem 5rem; max-width: 1300px; margin: 0 auto; }
+  .section-eyebrow { font-size: 0.75rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--charcoal); font-weight: 600; margin-bottom: 1rem; display: block; }
+  .section-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.5rem, 4vw, 4rem); margin-bottom: 2rem; line-height: 1.1; }
+  .section-title em { font-style: italic; color: var(--charcoal); }
+
+  /* --- NAV --- */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 1rem 5rem; background: transparent; transition: var(--transition-slow);
+  }
+  nav.scrolled {
+    background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(10px); padding: 0.8rem 5rem;
+    border-bottom: 1px solid rgba(223, 211, 195, 0.5); box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+  }
+  
+  .nav-logo { text-decoration: none; display: flex; flex-direction: column; align-items: center; color: var(--charcoal); }
+  .nav-logo-top { font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; font-weight: 300; line-height: 0.8; position: relative; display: flex; align-items: baseline; }
+  .nav-logo-i { position: relative; }
+  .nav-logo-dot { position: absolute; top: 3px; left: 50%; transform: translateX(-50%); width: 5px; height: 5px; background-color: red; border-radius: 50%; }
+  .nav-logo-by { font-family: 'Jost', sans-serif; font-size: 0.7rem; margin-left: 0.4rem; color: var(--charcoal); font-weight: 300; }
+  .nav-logo-bottom { font-family: 'Cormorant Garamond', serif; font-size: 0.9rem; letter-spacing: 0.3em; text-transform: uppercase; margin-top: 0.4rem; color: var(--charcoal); font-weight: 300; }
+  .nav-logo-red { color: red; }
+
+  .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+  .nav-links a { color: var(--text-muted); text-decoration: none; font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; transition: color 0.3s; font-weight: 500; }
+  .nav-links a:hover { color: var(--charcoal); }
+  
+  .nav-cta-btn {
+    background: var(--charcoal); color: var(--gallery-white); text-decoration: none; font-size: 0.75rem; letter-spacing: 0.15em;
+    text-transform: uppercase; padding: 0.8rem 1.5rem; transition: background 0.3s; font-weight: 500;
+  }
+  .nav-cta-btn:hover { background: #000; }
+
+  /* --- HERO --- */
+  .hero {
+    position: relative; padding-top: 140px; padding-bottom: 4rem; min-height: 600px;
+    display: flex; align-items: center; overflow: hidden; background: var(--fine-art-taupe);
+  }
+  .hero-bg-video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; object-fit: cover; opacity: 0.25; }
+  
+  .hero-wrapper {
+    position: relative; z-index: 2; width: 100%; max-width: 1300px; margin: 0 auto; padding: 0 5rem;
+    display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 4rem; align-items: center;
+  }
+  
+  .hero-text-content { animation: heroFadeUp 1s ease both; }
+  @keyframes heroFadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+  .soft-offer {
+    display: inline-block; font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600;
+    color: var(--charcoal); background: var(--champagne); padding: 0.4rem 1rem; margin-bottom: 1.5rem; border-radius: 2px;
+  }
+  
+  .hero-text-content h1 { font-size: clamp(2.2rem, 4vw, 3.8rem); line-height: 1.1; margin-bottom: 1rem; font-weight: 400; }
+  
+  .hero-location-tags {
+    font-size: 0.85rem; letter-spacing: 0.1em; color: var(--charcoal); font-weight: 500; text-transform: uppercase;
+    margin-bottom: 1.5rem; display: flex; gap: 0.8rem; flex-wrap: wrap; align-items: center;
+  }
+  .hero-location-tags span { display: flex; align-items: center; gap: 0.4rem; }
+  .hero-location-tags span::before { content: "•"; color: var(--text-muted); }
+  .hero-location-tags span:first-child::before { display: none; }
+
+  .hero-sub { font-size: 1.1rem; line-height: 1.6; margin-bottom: 2rem; max-width: 90%; color: var(--charcoal); font-weight: 400; }
+  
+  .hero-trust-badges { font-size: 0.8rem; letter-spacing: 0.05em; color: var(--charcoal); margin-bottom: 1rem; font-weight: 600; }
+  .hero-trust-badges .stars { color: var(--charcoal); letter-spacing: 2px; margin-right: 5px; }
+
+  .pricing-anchor { font-size: 1rem; font-weight: 500; color: var(--charcoal); border-bottom: 1px solid var(--charcoal); padding-bottom: 0.3rem; display: inline-block; margin-bottom: 2rem; }
+
+  /* Animated WhatsApp CTA */
+  @keyframes softPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.03); }
+    100% { transform: scale(1); }
+  }
+
+  .hero-whatsapp-cta {
+    display: inline-flex; align-items: center; gap: 0.8rem; color: var(--charcoal); text-decoration: none;
+    font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600; transition: color 0.3s;
+    animation: softPulse 2.5s infinite ease-in-out;
+  }
+  .hero-whatsapp-cta:hover { color: var(--text-muted); animation: none; }
+  .hero-whatsapp-cta svg { width: 18px; height: 18px; fill: currentColor; }
+
+  /* Hero & Bottom Mini Form Box */
+  .hero-form-box {
+    background: var(--gallery-white); padding: 3rem; border: 1px solid var(--champagne); box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    animation: heroFadeUp 1s ease 0.3s both;
+  }
+  .hero-form-box h3 { font-family: 'Cormorant Garamond', serif; font-size: 2rem; margin-bottom: 0.5rem; text-align: center; }
+  .hero-form-box p { text-align: center; font-size: 0.85rem; margin-bottom: 2rem; color: var(--text-muted); }
+  
+  .mini-form-field { margin-bottom: 1.2rem; text-align: left; }
+  .mini-form-field label { display: block; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600; color: var(--charcoal); margin-bottom: 0.4rem; }
+  .mini-form-field input { width: 100%; padding: 0.8rem 1rem; border: 1px solid var(--champagne); font-family: 'Jost', sans-serif; font-size: 0.95rem; background: var(--fine-art-taupe); outline: none; transition: border-color 0.3s; }
+  .mini-form-field input:focus { border-color: var(--charcoal); background: var(--gallery-white); }
+  
+  .mini-form-btn {
+    width: 100%; padding: 1.2rem; background: var(--charcoal); color: var(--gallery-white); border: none;
+    font-family: 'Jost', sans-serif; font-size: 0.8rem; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 600;
+    cursor: pointer; transition: background 0.3s; margin-top: 1rem;
+  }
+  .mini-form-btn:hover { background: #000; }
+
+  .form-scarcity { font-size: 0.7rem; color: var(--charcoal); font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; text-align: center; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+  .form-micro-text { font-size: 0.75rem; color: var(--text-muted); text-align: center; line-height: 1.6; }
+  .form-micro-text span { display: block; margin-bottom: 0.2rem; }
+
+  /* --- NEW FEATURE / TRUST SECTION --- */
+  .feature-trust-bar {
+    background: var(--gallery-white); border-bottom: 1px solid var(--champagne); padding: 4rem 5rem;
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 3rem; text-align: center;
+  }
+  .feature-trust-item { display: flex; flex-direction: column; align-items: center; gap: 0.5rem; }
+  .feature-trust-title { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; color: var(--charcoal); line-height: 1.2; font-weight: 600; }
+  .feature-trust-desc { font-size: 0.95rem; color: var(--text-muted); line-height: 1.5; font-weight: 400; }
+
+  /* --- EMOTIONAL FOUNDER SECTION --- */
+  .about-section { display: grid; grid-template-columns: 1fr 1fr; gap: 8rem; align-items: center; background: var(--gallery-white); }
+  .about-img { position: relative; aspect-ratio: 4/5; overflow: hidden; padding: 1px; border: 1px solid var(--champagne); }
+  .about-img img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(100%) contrast(1.1); }
+  .about-text p { color: var(--charcoal); font-weight: 300; font-size: 1.05rem; line-height: 2; margin-bottom: 1.8rem; }
+  .signature { font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; font-style: italic; color: var(--charcoal); margin-top: 1rem; }
+
+  /* --- WHY CHOOSE US --- */
+  .why-section { background: var(--fine-art-taupe); text-align: center; }
+  .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3rem; margin-top: 4rem; }
+  .why-card { padding: 2rem; border: 1px solid var(--champagne); background: var(--gallery-white); transition: transform 0.3s; text-align: left; }
+  .why-card:hover { transform: translateY(-5px); }
+  .why-card-title { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; color: var(--charcoal); margin-bottom: 1rem; }
+  .why-card-text { font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; }
+
+  /* --- THE EXPERIENCE TIMELINE --- */
+  .experience-section { background: var(--gallery-white); text-align: center; }
+  .experience-timeline { display: grid; grid-template-columns: repeat(4, 1fr); gap: 3rem; text-align: left; margin-top: 5rem; }
+  .timeline-step { position: relative; padding-top: 2.5rem; border-top: 1px solid var(--champagne); }
+  .timeline-number { font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; color: var(--champagne); position: absolute; top: -1.8rem; left: 0; background: var(--gallery-white); padding-right: 1rem; line-height: 1; }
+  .timeline-title { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; color: var(--charcoal); margin-bottom: 0.8rem; margin-top: 0.5rem; }
+  .timeline-desc { font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; }
+
+  /* --- REAL STORY (Ananya & Rohan) --- */
+  .story-header { text-align: center; max-width: 800px; margin: 0 auto 5rem; }
+  .story-header .location { font-size: 0.75rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--charcoal); margin-top: 1rem; display: block; font-weight: 600; }
+  .story-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 4rem; max-width: 1300px; margin: 0 auto; height: 700px; align-items: center; }
+  .story-img-large { aspect-ratio: 3/4; overflow: hidden; padding: 1px; border: 1px solid var(--champagne); }
+  .story-img-large img { width: 100%; height: 100%; object-fit: cover; }
+  .story-content { display: flex; flex-direction: column; gap: 3rem; text-align: left; }
+  .story-img-small { aspect-ratio: 16/10; overflow: hidden; border: 1px solid var(--champagne); padding: 1px; }
+  .story-img-small img { width: 100%; height: 100%; object-fit: cover; }
+  .story-quote { font-family: 'Cormorant Garamond', serif; font-size: 2rem; color: var(--charcoal); font-weight: 300; line-height: 1.5; margin-bottom: 1rem; }
+  .story-context { font-size: 1.05rem; color: var(--charcoal); line-height: 2; font-weight: 300; }
+
+  /* --- PORTFOLIO --- */
+  .portfolio-section { background: var(--fine-art-taupe); text-align: center; }
+  .portfolio-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; margin-top: 4rem; }
+  .portfolio-item { position: relative; aspect-ratio: 4/3; overflow: hidden; cursor: pointer; border: 1px solid var(--champagne); }
+  .portfolio-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; filter: brightness(0.9); }
+  .portfolio-item:hover img { transform: scale(1.05); filter: brightness(1); }
+  .portfolio-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, transparent 50%); display: flex; align-items: flex-end; justify-content: center; padding: 2rem; pointer-events: none; }
+  .portfolio-label { font-family: 'Cormorant Garamond', serif; font-size: 2rem; color: var(--gallery-white); font-weight: 300; }
+
+  /* --- AUTOPLAY TEASER VIDEO & FILMS SECTION --- */
+  .films-section { background: var(--gallery-white); text-align: center; }
+  
+  .teaser-main-video { position: relative; aspect-ratio: 16/9; background: #000; overflow: hidden; border: 1px solid var(--champagne); margin-top: 3rem; margin-bottom: 3rem; }
+  .teaser-main-video video { width: 100%; height: 100%; object-fit: cover; opacity: 0.85; transition: opacity 0.5s, transform 0.8s; }
+  .teaser-main-video:hover video { opacity: 1; transform: scale(1.02); }
+  
+  .films-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 3rem; }
+  .film-container { position: relative; aspect-ratio: 16/9; background: #e9e5e0; overflow: hidden; border: 1px solid var(--champagne); }
+  .film-container video { width: 100%; height: 100%; object-fit: cover; opacity: 0.8; transition: opacity 0.3s; }
+  .film-container:hover video { opacity: 1; }
+  .film-caption { margin-top: 1rem; font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--charcoal); font-weight: 600; }
+
+  /* --- REVIEWS --- */
+  .testimonials-section { background: var(--fine-art-taupe); }
+  .testimonials-header { text-align: center; max-width: 800px; margin: 0 auto 4rem; }
+  .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+  .testimonial-card { padding: 3rem; background: var(--gallery-white); border: 1px solid var(--champagne); position: relative; }
+  .testimonial-text { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; color: var(--charcoal); line-height: 1.6; font-style: italic; margin-bottom: 2rem; text-align: center; }
+  .testimonial-meta { border-top: 1px solid var(--champagne); padding-top: 1.5rem; text-align: center; }
+  .couple-name { font-size: 0.85rem; font-weight: 600; color: var(--charcoal); letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 0.2rem; }
+  .couple-details { font-size: 0.75rem; color: var(--text-muted); line-height: 1.5; }
+
+  /* --- FAQ --- */
+  .faq-section { background: var(--gallery-white); }
+  .faq-header { text-align: center; margin: 0 auto 4rem; }
+  .faq-list { max-width: 800px; margin: 0 auto; border-top: 1px solid var(--champagne); }
+  .faq-item { border-bottom: 1px solid var(--champagne); }
+  .faq-q { display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 0; cursor: pointer; font-size: 1.05rem; color: var(--charcoal); font-weight: 500; }
+  .faq-icon { font-size: 1.5rem; color: var(--charcoal); transition: transform 0.3s; font-weight: 300; }
+  .faq-item.open .faq-icon { transform: rotate(45deg); color: var(--text-muted); }
+  .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; font-size: 0.95rem; color: var(--text-muted); line-height: 1.8; }
+  .faq-item.open .faq-a { max-height: 300px; padding-bottom: 1.5rem; }
+
+  /* --- BOTTOM CONTACT SECTION --- */
+  .bottom-contact-section { background: var(--fine-art-taupe); padding-top: 8rem; padding-bottom: 8rem; }
+  .contact-wrapper { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 6rem; align-items: center; max-width: 1300px; margin: 0 auto; }
+  .contact-info-block { margin-top: 3rem; border-top: 1px solid var(--champagne); padding-top: 2.5rem; }
+  .contact-info-item { margin-bottom: 1.5rem; }
+  .contact-info-label { font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--charcoal); font-weight: 600; display: block; margin-bottom: 0.3rem; }
+  .contact-info-text { font-size: 1rem; color: var(--text-muted); line-height: 1.6; text-decoration: none; display: inline-block; transition: color 0.3s; }
+  a.contact-info-text:hover { color: var(--charcoal); }
+
+  /* --- DESKTOP STICKY CTA --- */
+  .desktop-sticky-cta {
+    position: fixed; bottom: 30px; right: 30px; z-index: 199;
+    background: var(--charcoal); color: var(--gallery-white); padding: 1rem 2rem;
+    font-family: 'Jost', sans-serif; font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; font-weight: 600;
+    text-decoration: none; box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    opacity: 0; pointer-events: none; transition: all 0.4s ease; border-radius: 3px;
+  }
+  .desktop-sticky-cta:hover { background: #000; transform: translateY(-3px); }
+  .desktop-sticky-cta.visible { opacity: 1; pointer-events: auto; }
+
+  /* --- STICKY MOBILE CTA --- */
+  .sticky-cta {
+    display: none; position: fixed; bottom: 0; left: 0; right: 0; z-index: 200;
+    background: rgba(255, 255, 255, 0.98); border-top: 1px solid var(--champagne); padding: 1rem;
+    gap: 1rem; box-shadow: 0 -5px 20px rgba(0,0,0,0.05);
+  }
+  .sticky-btn {
+    flex: 1; padding: 1rem; font-family: 'Jost', sans-serif; font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600; border: 1px solid var(--charcoal);
+    cursor: pointer; text-align: center; text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 0.5rem; color: var(--charcoal); background: var(--gallery-white);
+  }
+  .sticky-btn.primary { background: var(--charcoal); color: var(--gallery-white); }
+  .sticky-btn svg { width: 16px; height: 16px; fill: currentColor; }
+
+  /* --- RESPONSIVE --- */
+  @media (max-width: 900px) {
+    nav { padding: 1rem 1.5rem; }
+    .nav-links, .nav-cta-btn, .desktop-sticky-cta { display: none !important; }
+    section { padding: 4rem 1.5rem; }
+    
+    .hero { padding-top: 110px; min-height: auto; }
+    .hero-wrapper { grid-template-columns: 1fr; gap: 3rem; padding: 0 1.5rem; text-align: center; }
+    .hero-location-tags { justify-content: center; }
+    .hero-sub { max-width: 100%; margin-left: auto; margin-right: auto; }
+    .hero-form-box { padding: 2rem 1.5rem; }
+    
+    .feature-trust-bar { grid-template-columns: 1fr; gap: 2.5rem; padding: 3rem 1.5rem; }
+    
+    .about-section, .why-grid, .portfolio-grid, .films-grid, .testimonials-grid { grid-template-columns: 1fr; gap: 2rem; }
+    
+    .story-grid { grid-template-columns: 1fr; height: auto; text-align: center; }
+    .story-content { text-align: center; }
+
+    .experience-timeline { grid-template-columns: 1fr; gap: 3rem; }
+    .timeline-number { background: var(--gallery-white); }
+    
+    .contact-wrapper { grid-template-columns: 1fr; gap: 3rem; text-align: center; }
+    .bottom-contact-section { padding: 5rem 1.5rem; }
+
+    .sticky-cta { display: flex; }
+    body { padding-bottom: 80px; }
+  }
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <a href="#" class="nav-logo">
+    <div class="nav-logo-top">Stor<span class="nav-logo-i">i<span class="nav-logo-dot"></span></span>es<span class="nav-logo-by">by</span></div>
+    <div class="nav-logo-bottom"><span class="nav-logo-red">S</span>amrat Rudra</div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">The Artist</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#films">Films</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#booking" class="nav-cta-btn">Check Availability</a>
+</nav>
+
+<section class="hero">
+  <video class="hero-bg-video" autoplay loop muted playsinline loading="lazy" poster="hero-poster.jpg">
+    <source src="hero-video.mp4" type="video/mp4">
+  </video>
+  
+  <div class="hero-wrapper">
+    <div class="hero-text-content">
+      <div class="soft-offer">🗓️ 2026 Wedding Bookings Now Open</div>
+      <h1>Cinematic Bengali Wedding Photography & Films in Kolkata</h1>
+      
+      <div class="hero-location-tags">
+        <span>Bengali Wedding Specialist</span>
+        <span>Kolkata Venues</span>
+        <span>Destination Weddings</span>
+      </div>
+
+      <p class="hero-sub">We document real, chaotic, and beautiful moments so your memories feel exactly like your wedding day. No forced poses. No artificial sets.</p>
+      
+      <div class="hero-trust-badges">
+        <span class="stars">★★★★★</span> 4.9/5 from 187+ couples
+      </div>
+
+      <div class="pricing-anchor">Custom Collections Starting From ₹1,25,000</div>
+      <br>
+
+      <a href="https://wa.me/919563557496" class="hero-whatsapp-cta" target="_blank">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.1.548 4.07 1.503 5.778L.057 23.854a.5.5 0 0 0 .612.612l6.076-1.446A11.936 11.936 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.795 9.795 0 0 1-5.016-1.382l-.36-.214-3.722.886.9-3.621-.234-.373A9.818 9.818 0 1 1 12 21.818z"/></svg>
+        Talk Directly With Samrat
+      </a>
+    </div>
+
+    <div class="hero-form-box" id="booking">
+      <h3>Check Availability</h3>
+      <p>Enter your details to receive our pricing guide and check if your date is open.</p>
+      
+      <form action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST">
+        <input type="hidden" name="_subject" value="New Wedding Inquiry (Hero Form)">
+        <input type="hidden" name="_captcha" value="false">
+
+        <div class="mini-form-field">
+          <label>Your Name</label>
+          <input type="text" name="name" required placeholder="E.g., Ananya">
+        </div>
+        <div class="mini-form-field">
+          <label>Wedding Date</label>
+          <input type="date" name="date" required>
+        </div>
+        <div class="mini-form-field">
+          <label>WhatsApp Number</label>
+          <input type="tel" name="phone" required placeholder="+91">
+        </div>
+        <button type="submit" class="mini-form-btn">Get Custom Wedding Quote</button>
+        
+        <div class="form-scarcity">Only 8 weddings accepted per month.</div>
+        <div class="form-micro-text">
+          <span>✓ We reply within 2 hours.</span>
+          <span>✓ Your date is checked personally.</span>
+          <span>✓ No spam. Only wedding details.</span>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<div class="feature-trust-bar">
+  <div class="feature-trust-item">
+    <div class="feature-trust-title">187+ Happy Couples</div>
+    <div class="feature-trust-desc">Trusted by couples across Kolkata & destination weddings</div>
+  </div>
+  <div class="feature-trust-item">
+    <div class="feature-trust-title">Featured In WeddingSutra</div>
+    <div class="feature-trust-desc">Recognized for cinematic Bengali wedding storytelling</div>
+  </div>
+  <div class="feature-trust-item">
+    <div class="feature-trust-title">500+ Occasions Beautifully Documented</div>
+    <div class="feature-trust-desc">A decade spent preserving memories with honesty and emotion</div>
+  </div>
+</div>
+
+<section id="about" class="about-section">
+  <div class="about-img">
+    <img src="about-portrait.jpg" alt="Samrat Rudra photographing a wedding" loading="lazy">
+  </div>
+  <div class="about-text">
+    <div class="section-eyebrow">The Artist</div>
+    <h2 class="section-title">Hi, I'm Samrat.</h2>
+    <p>I started photographing weddings because I was fascinated by how much emotion happens in a single day. The loud, chaotic joy of a Baraat, the quiet nerves before walking down the aisle, the tears parents try to hide.</p>
+    <p>My philosophy is simple: you shouldn't feel like you're on a film set. You should enjoy your wedding. My team and I blend into the background so we can capture the real, unscripted moments.</p>
+    <p><strong>Luxury isn't about holding perfect poses. It's about being entirely present in your own memories.</strong></p>
+    <div class="signature">Samrat Rudra</div>
+  </div>
+</section>
+
+<section id="why-us" class="why-section">
+  <div class="section-eyebrow">The Difference</div>
+  <h2 class="section-title">Why Couples Choose Us</h2>
+  <div class="why-grid">
+    <div class="why-card">
+      <h3 class="why-card-title">No Forced Poses</h3>
+      <p class="why-card-text">We don't interrupt your rituals to ask for a smile. We let the day flow naturally and document the genuine interactions.</p>
+    </div>
+    <div class="why-card">
+      <h3 class="why-card-title">Bengali Wedding Expertise</h3>
+      <p class="why-card-text">From the exact timing of the Sindoor Daan to the chaotic energy of the Bor Jatri, we anticipate culturally significant moments.</p>
+    </div>
+    <div class="why-card">
+      <h3 class="why-card-title">Cinematic Storytelling</h3>
+      <p class="why-card-text">Our films are not just chronologically stitched clips. We use professional audio and pacing to craft an emotional narrative.</p>
+    </div>
+    <div class="why-card">
+      <h3 class="why-card-title">Calm Documentary Approach</h3>
+      <p class="why-card-text">Weddings are chaotic. We are not. Our team operates quietly in the background, keeping the environment stress-free.</p>
+    </div>
+    <div class="why-card">
+      <h3 class="why-card-title">Premium In-House Editing</h3>
+      <p class="why-card-text">We never outsource our post-production. Every color grade and cut is handled personally to ensure our signature fine-art look.</p>
+    </div>
+    <div class="why-card">
+      <h3 class="why-card-title">Strictly Limited Bookings</h3>
+      <p class="why-card-text">To maintain artistic quality and deliver fast turnarounds, we strictly cap our studio at 8 exclusive weddings per month.</p>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="experience-section">
+  <div class="section-eyebrow">The Process</div>
+  <h2 class="section-title">The Experience of Working With Us</h2>
+  <p style="text-align: center; max-width: 600px; margin: 0 auto; color: var(--text-muted);">We remove the uncertainty and stress from wedding photography, so you can focus entirely on being present on your special day.</p>
+  
+  <div class="experience-timeline">
+    <div class="timeline-step">
+      <div class="timeline-number">01</div>
+      <h3 class="timeline-title">Discovery Call</h3>
+      <p class="timeline-desc">We get to know your wedding vision, personalities, venues, and priorities to ensure we are the absolute perfect fit for your story.</p>
+    </div>
+    <div class="timeline-step">
+      <div class="timeline-number">02</div>
+      <h3 class="timeline-title">Planning & Guidance</h3>
+      <p class="timeline-desc">We proactively help you create photography-friendly timelines and stress-free coverage plans leading up to your wedding day.</p>
+    </div>
+    <div class="timeline-step">
+      <div class="timeline-number">03</div>
+      <h3 class="timeline-title">Calm Coverage</h3>
+      <p class="timeline-desc">We blend quietly into the background, documenting your day naturally without forcing poses or interrupting your moments.</p>
+    </div>
+    <div class="timeline-step">
+      <div class="timeline-number">04</div>
+      <h3 class="timeline-title">Editing & Delivery</h3>
+      <p class="timeline-desc">Your memories are carefully curated and color-graded into timeless photographs and cinematic films to preserve your legacy.</p>
+    </div>
+  </div>
+</section>
+
+<section id="story" style="background: var(--fine-art-taupe);">
+  <div class="story-header">
+    <div class="section-eyebrow">A Featured Day</div>
+    <h2 class="section-title">Ananya & Rohan</h2>
+    <span class="location">A Rainy July Wedding At ITC Royal Bengal</span>
+  </div>
+  <div class="story-grid">
+    <div class="story-img-large">
+      <img src="story-large.jpg" alt="Candid wedding emotion" loading="lazy">
+    </div>
+    <div class="story-content">
+      <div class="story-quote">"It rained right before our entry, everything was delayed, but looking at these photos, all I remember is how much we laughed."</div>
+      <p class="story-context">When the rain forced the outdoor mandap to be moved inside at the last minute, Ananya and Rohan didn't panic. They embraced the chaos. We captured the messy, beautiful reality of their day without asking them to pose once.</p>
+      <div class="story-img-small">
+        <img src="story-small.jpg" alt="Cinematic wedding details" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio" class="portfolio-section">
+  <div class="section-eyebrow">The Work</div>
+  <h2 class="section-title">Browse Our Collections</h2>
+  <div class="portfolio-grid">
+    <div class="portfolio-item">
+      <img src="portfolio-bengali.jpg" alt="Bengali Weddings" loading="lazy">
+      <div class="portfolio-overlay"><h3 class="portfolio-label">Bengali Weddings</h3></div>
+    </div>
+    <div class="portfolio-item">
+      <img src="portfolio-destination.jpg" alt="Destination Weddings" loading="lazy">
+      <div class="portfolio-overlay"><h3 class="portfolio-label">Destination Weddings</h3></div>
+    </div>
+    <div class="portfolio-item">
+      <img src="portfolio-luxury.jpg" alt="Luxury Weddings" loading="lazy">
+      <div class="portfolio-overlay"><h3 class="portfolio-label">Luxury Weddings</h3></div>
+    </div>
+    <div class="portfolio-item">
+      <img src="portfolio-intimate.jpg" alt="Intimate Weddings" loading="lazy">
+      <div class="portfolio-overlay"><h3 class="portfolio-label">Intimate Weddings</h3></div>
+    </div>
+  </div>
+</section>
+
+<section id="films" class="films-section">
+  <div class="section-eyebrow">Cinematic Teaser</div>
+  <h2 class="section-title">Watch A Real Wedding Story</h2>
+  <p style="color: var(--text-muted);">Experience the narrative approach we bring to wedding cinema.</p>
+
+  <div class="teaser-main-video">
+    <video autoplay loop muted playsinline loading="lazy">
+      <source src="teaser-main.mp4" type="video/mp4">
+    </video>
+  </div>
+  
+  <div class="films-grid">
+    <div>
+      <div class="film-container">
+        <video autoplay loop muted playsinline loading="lazy">
+          <source src="teaser-1.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="film-caption">Ananya & Rohan | ITC Royal Bengal, Kolkata</div>
+    </div>
+    <div>
+      <div class="film-container">
+        <video autoplay loop muted playsinline loading="lazy">
+          <source src="teaser-2.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="film-caption">Priya & Arjun | Fairmont, Jaipur</div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials-section">
+  <div class="testimonials-header">
+    <div class="section-eyebrow">Verified Reviews</div>
+    <h2 class="section-title">What Our Couples Say</h2>
+  </div>
+  <div class="testimonials-grid">
+    <div class="testimonial-card">
+      <p class="testimonial-text">"My father cried watching the film. We had 400 guests and were worried about cameras being everywhere, but Samrat's team was practically invisible. We didn't pose once, yet every important moment was caught."</p>
+      <div class="testimonial-meta">
+        <div class="couple-name">Ananya & Rohan</div>
+        <div class="couple-details">Found via WedMeGood • ITC Royal Bengal</div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <p class="testimonial-text">"The pricing was incredibly transparent from day one. We got our preview photos within 4 days of the reception, and the full gallery in 4 weeks exactly as promised. The fine-art editing style is stunning."</p>
+      <div class="testimonial-meta">
+        <div class="couple-name">Priya & Arjun</div>
+        <div class="couple-details">Destination Wedding • Fairmont Jaipur</div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <p class="testimonial-text">"I've looked at our album every week since we got it. If you want a photographer who understands traditional Bengali rituals without making them look like a staged photoshoot, book them immediately."</p>
+      <div class="testimonial-meta">
+        <div class="couple-name">Meghna & Devraj</div>
+        <div class="couple-details">Found via Google Search • Taj Bengal</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq-section" id="faq">
+  <div class="faq-header">
+    <div class="section-eyebrow">Clarity & Transparency</div>
+    <h2 class="section-title">Frequently Asked Questions</h2>
+  </div>
+  <div class="faq-list">
+    <div class="faq-item">
+      <div class="faq-q">How much does wedding photography cost?<span class="faq-icon">+</span></div>
+      <div class="faq-a">Our custom wedding collections start from ₹1,25,000. Every wedding is unique. Once you fill out the inquiry form, we schedule a quick call to understand your events and timeline, and then provide a tailored, transparent quote with no hidden fees.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">How early should we book our dates?<span class="faq-icon">+</span></div>
+      <div class="faq-a">To maintain our premium editing standards, we strictly limit our bookings to 8 weddings per month. We highly recommend securing your date 6 to 12 months in advance.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">We are awkward in front of the camera. Is that okay?<span class="faq-icon">+</span></div>
+      <div class="faq-a">90% of our couples tell us this! That is precisely why our documentary approach works so well. We will never ask you to hold stiff, uncomfortable poses. We give gentle direction and then let you be yourselves.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">What is your delivery timeline?<span class="faq-icon">+</span></div>
+      <div class="faq-a">You will receive a curated preview gallery of 30-50 highlights within 1 week of your wedding. The complete edited photo gallery takes 4-6 weeks, and cinematic films are delivered in 8-12 weeks.</div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="bottom-contact-section">
+  <div class="contact-wrapper">
+    
+    <div class="contact-text">
+      <div class="section-eyebrow">The Next Step</div>
+      <h2 class="section-title">Let's Tell Your Story.</h2>
+      <p>We are currently accepting inquiries for the upcoming wedding season. Fill out the form to check our availability, or reach out to us directly.</p>
+      
+      <div class="contact-info-block">
+        <div class="contact-info-item">
+          <span class="contact-info-label">Studio Address</span>
+          <span class="contact-info-text">RN Guha Rd, Golpark, Dum Dum,<br>South Dumdum, West Bengal 700028</span>
+        </div>
+        <div class="contact-info-item">
+          <span class="contact-info-label">Instagram</span>
+          <a href="https://instagram.com/storiesby_samratrudra" class="contact-info-text" target="_blank">@storiesby_samratrudra</a>
+        </div>
+        <div class="contact-info-item">
+          <span class="contact-info-label">WhatsApp</span>
+          <a href="https://wa.me/919563557496" class="contact-info-text" target="_blank">+91 9563 557 496</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-form-box" style="animation: none;">
+      <h3>Check Availability</h3>
+      <p>Enter your details to receive our pricing guide and check if your date is open.</p>
+      
+      <form action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST">
+        <input type="hidden" name="_subject" value="New Wedding Inquiry (Bottom Form)">
+        <input type="hidden" name="_captcha" value="false">
+
+        <div class="mini-form-field">
+          <label>Your Name</label>
+          <input type="text" name="name" required placeholder="E.g., Ananya">
+        </div>
+        <div class="mini-form-field">
+          <label>Wedding Date</label>
+          <input type="date" name="date" required>
+        </div>
+        <div class="mini-form-field">
+          <label>WhatsApp Number</label>
+          <input type="tel" name="phone" required placeholder="+91">
+        </div>
+        <button type="submit" class="mini-form-btn">Get Custom Wedding Quote</button>
+        
+        <div class="form-scarcity">Only 8 weddings accepted per month.</div>
+        <div class="form-micro-text">
+          <span>✓ We reply within 2 hours.</span>
+          <span>✓ Your date is checked personally.</span>
+        </div>
+      </form>
+    </div>
+    
+  </div>
+</section>
+
+<a href="#booking" class="desktop-sticky-cta" id="desktopCta">Check Availability</a>
+
+<div class="sticky-cta">
+  <a href="https://wa.me/919563557496" class="sticky-btn">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.1.548 4.07 1.503 5.778L.057 23.854a.5.5 0 0 0 .612.612l6.076-1.446A11.936 11.936 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.795 9.795 0 0 1-5.016-1.382l-.36-.214-3.722.886.9-3.621-.234-.373A9.818 9.818 0 1 1 12 21.818z"/></svg>
+    WhatsApp Us
+  </a>
+  <a href="#contact" class="sticky-btn primary">Check Dates</a>
+</div>
+
+<script>
+  // Navigation & Desktop CTA scroll effect
+  const nav = document.getElementById('nav');
+  const desktopCta = document.getElementById('desktopCta');
+  
+  window.addEventListener('scroll', () => {
+    // Nav logic
+    nav.classList.toggle('scrolled', window.scrollY > 50);
+    
+    // Desktop Sticky CTA logic (only show after scrolling past the hero form)
+    if (window.innerWidth > 900) {
+      if (window.scrollY > 600) {
+        desktopCta.classList.add('visible');
+      } else {
+        desktopCta.classList.remove('visible');
+      }
+    }
+  });
+
+  // FAQ Accordion
+  const faqItems = document.querySelectorAll('.faq-item');
+  faqItems.forEach(item => {
+    item.querySelector('.faq-q').addEventListener('click', () => {
+      const isOpen = item.classList.contains('open');
+      faqItems.forEach(i => i.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    });
+  });
+
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', e => {
+      const targetId = link.getAttribute('href');
+      if(targetId === '#') return;
+      const target = document.querySelector(targetId);
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+</script>
+</body>
+</html>
