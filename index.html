@@ -734,48 +734,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   });
 </script>
  <style>
-  /* This stops visitors from highlighting and copying text */
-  body {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-</style>
 
-<script>
-  // This blocks the right-click menu
-  document.addEventListener('contextmenu', function(e) {
-    e.preventDefault();
-  });
-
-  // This blocks keyboard shortcuts used to open the code panel
-  document.onkeydown = function(e) {
-    // Block F12
-    if (e.keyCode == 123) {
-      return false;
-    }
-    // Block Ctrl+Shift+I (Inspect)
-    if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
-      return false;
-    }
-    // Block Ctrl+Shift+C (Inspect Element)
-    if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
-      return false;
-    }
-    // Block Ctrl+Shift+J (Console)
-    if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
-      return false;
-    }
-    // Block Ctrl+U (View Source)
-    if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
-      return false;
-    }
-    // Block Cmd+Option+I and Cmd+Option+U for Mac users
-    if (e.metaKey && e.altKey && (e.keyCode == 'I'.charCodeAt(0) || e.keyCode == 'U'.charCodeAt(0))) {
-      return false;
-    }
-  };
-</script>
 </body>
 </html>
