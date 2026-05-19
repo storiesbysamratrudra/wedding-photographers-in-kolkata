@@ -734,6 +734,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   });
 </script>
  <style>
+<script>
+document.querySelectorAll('form').forEach(form => {
+  form.addEventListener('submit', function() {
 
+    const name = form.querySelector('input[name="name"]')?.value || '';
+    const phone = form.querySelector('input[name="phone"]')?.value || '';
+
+    window.dataLayer = window.dataLayer || [];
+
+    dataLayer.push({
+      event: 'enhanced_conversion_data',
+      enhanced_conversion_data: {
+        phone_number: phone,
+        address: {
+          first_name: name
+        }
+      }
+    });
+
+  });
+});
+</script>
 </body>
 </html>
