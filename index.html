@@ -93,7 +93,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .hero-text-content { animation: heroFadeUp 1s ease both; }
   @keyframes heroFadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
 
-  /* Updated Offer Banner */
+  /* Offer Banner */
   .soft-offer {
     display: inline-block; font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600;
     color: #fff; background: var(--accent-red); padding: 0.5rem 1.2rem; margin-bottom: 1.5rem; border-radius: 2px;
@@ -120,7 +120,42 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .hero-trust-badges { font-size: 0.8rem; letter-spacing: 0.05em; color: var(--charcoal); margin-bottom: 1rem; font-weight: 600; }
   .hero-trust-badges .stars { color: var(--charcoal); letter-spacing: 2px; margin-right: 5px; }
 
-  .pricing-anchor { font-size: 1rem; font-weight: 500; color: var(--charcoal); border-bottom: 1px solid var(--charcoal); padding-bottom: 0.3rem; display: inline-block; margin-bottom: 2rem; }
+  /* Pricing Anchor - Optimized */
+  .pricing-anchor {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-bottom: 2rem;
+  }
+  .price-highlight {
+    background: #fff3cd;
+    padding: 6px 12px;
+    border-radius: 4px;
+    color: var(--charcoal);
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+  .price-strike-group {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  .price-strike {
+    text-decoration: line-through;
+    color: var(--accent-red);
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  .price-timer {
+    background: var(--accent-red);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    white-space: nowrap;
+  }
 
   /* Animated WhatsApp CTA */
   @keyframes softPulse {
@@ -305,6 +340,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .hero-sub { max-width: 100%; margin-left: auto; margin-right: auto; }
     .hero-form-box { padding: 2rem 1.5rem; }
     
+    .pricing-anchor { 
+      flex-direction: column; 
+      justify-content: center; 
+      align-items: center; 
+      gap: 0.6rem; 
+    }
+    .price-highlight { 
+      font-size: 0.85rem; 
+      text-align: center;
+      line-height: 1.4;
+    }
+
     .feature-trust-bar { grid-template-columns: 1fr; gap: 2.5rem; padding: 3rem 1.5rem; }
     
     .about-section, .why-grid, .portfolio-grid, .films-grid, .testimonials-grid { grid-template-columns: 1fr; gap: 2rem; }
@@ -363,32 +410,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
 
       <div class="pricing-anchor">
-        <span style="background:#fff3cd; padding:4px 10px; border-radius:4px;">
-          This Week Only — Both Side Coverage From ₹89,999
-        </span>
-        
-        <span style="
-          text-decoration: line-through;
-          color:#c93b3b;
-          font-weight:600;
-          margin-left:8px;
-        ">
-          ₹1,29,999
-        </span>
-
-        <span style="
-          background:#c93b3b;
-          color:white;
-          padding:4px 8px;
-          border-radius:20px;
-          margin-left:10px;
-          font-size:0.8rem;
-          font-weight:600;
-        ">
-          3 Days Left
-        </span>
+        <div class="price-highlight">This Week Only — Both Side Coverage From ₹89,999</div>
+        <div class="price-strike-group">
+          <span class="price-strike">₹1,29,999</span>
+          <span class="price-timer">3 Days Left</span>
+        </div>
       </div>
-      <br>
 
       <a href="https://wa.me/919563557496?text=Hi%20Samrat%2C%20I%20found%20you%20on%20Google%20while%20searching%20for%20a%20wedding%20photographer%20in%20Kolkata.%20Is%20your%20team%20available%20for%20my%20wedding%20date%3F%20Please%20share%20package%20details." class="hero-whatsapp-cta" target="_blank">
         <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.1.548 4.07 1.503 5.778L.057 23.854a.5.5 0 0 0 .612.612l6.076-1.446A11.936 11.936 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.795 9.795 0 0 1-5.016-1.382l-.36-.214-3.722.886.9-3.621-.234-.373A9.818 9.818 0 1 1 12 21.818z"/></svg>
