@@ -120,7 +120,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .hero-trust-badges { font-size: 0.8rem; letter-spacing: 0.05em; color: var(--charcoal); margin-bottom: 1rem; font-weight: 600; }
   .hero-trust-badges .stars { color: var(--charcoal); letter-spacing: 2px; margin-right: 5px; }
 
-  /* Pricing Anchor - Optimized */
+  /* Pricing Anchor */
   .pricing-anchor {
     display: flex;
     align-items: center;
@@ -253,8 +253,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .films-section { background: var(--gallery-white); text-align: center; }
   
   .teaser-main-video { position: relative; aspect-ratio: 16/9; background: #000; overflow: hidden; border: 1px solid var(--champagne); cursor: pointer; margin-top: 3rem; margin-bottom: 3rem; }
-  .teaser-main-video img { width: 100%; height: 100%; object-fit: cover; opacity: 0.85; transition: opacity 0.5s, transform 0.8s; }
-  .teaser-main-video:hover img { opacity: 1; transform: scale(1.02); }
+  /* FIXED: Added video selector alongside img */
+  .teaser-main-video img, .teaser-main-video video { width: 100%; height: 100%; object-fit: cover; opacity: 0.85; transition: opacity 0.5s, transform 0.8s; }
+  .teaser-main-video:hover img, .teaser-main-video:hover video { opacity: 1; transform: scale(1.02); }
   
   .film-play-btn {
     position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
@@ -269,8 +270,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   .films-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 3rem; }
   .film-container { position: relative; aspect-ratio: 16/9; background: #e9e5e0; overflow: hidden; border: 1px solid var(--champagne); cursor: pointer; }
-  .film-container img { width: 100%; height: 100%; object-fit: cover; opacity: 0.8; transition: opacity 0.3s; }
-  .film-container:hover img { opacity: 1; }
+  /* FIXED: Added video selector alongside img */
+  .film-container img, .film-container video { width: 100%; height: 100%; object-fit: cover; opacity: 0.8; transition: opacity 0.3s; }
+  .film-container:hover img, .film-container:hover video { opacity: 1; }
   .film-container:hover .film-play-btn { transform: translate(-50%, -50%) scale(1.1); }
   .film-caption { margin-top: 1rem; font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--charcoal); font-weight: 600; }
 
@@ -447,7 +449,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <button type="submit" class="mini-form-btn">Get Custom Wedding Quote</button>
         
-        <div class="form-scarcity">Only 8 weddings accepted per month.</div>
+        <div class="form-scarcity" style="color: var(--accent-red);">🎉 Book This Week & Get A Free Pre-Wedding Shoot</div>
         <div class="form-micro-text">
           <span>✓ We reply within 2 hours.</span>
           <span>✓ Your date is checked personally.</span>
